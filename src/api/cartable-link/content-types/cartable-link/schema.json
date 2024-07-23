@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "cartable_links",
+  "info": {
+    "singularName": "cartable-link",
+    "pluralName": "cartable-links",
+    "displayName": "لینک های کارتابل"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AgentLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartable.link"
+    },
+    "AdminLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartable.link"
+    },
+    "EmployeLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartable.link"
+    }
+  }
+}

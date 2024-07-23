@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glaze_types",
+  "info": {
+    "singularName": "glaze-type",
+    "pluralName": "glaze-types",
+    "displayName": "نوع لعاب",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "glaze": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

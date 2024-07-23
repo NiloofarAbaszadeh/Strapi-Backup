@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "molde_types",
+  "info": {
+    "singularName": "molde-type",
+    "pluralName": "molde-types",
+    "displayName": "نوع قالب",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "molde": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

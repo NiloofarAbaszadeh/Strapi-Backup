@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "karbrans",
+  "info": {
+    "singularName": "karbran",
+    "pluralName": "karbrans",
+    "displayName": "کاربران",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "username",
+      "required": true
+    },
+    "profileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "default": "info@setareh.com"
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "isVerified": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "فعال",
+        "غیر فعال"
+      ],
+      "default": "غیر فعال"
+    },
+    "favorite": {
+      "type": "json"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "نماینده",
+        "ادمین",
+        "امور اداری",
+        "امور مالی",
+        "خانه بهداشت",
+        "امور حقوقی",
+        "انبار قطعات",
+        "انبار مواد",
+        "انبار موراد لیفتراک",
+        "انتظامات",
+        "انفورماتیک",
+        "آزمایشگاه دیوار",
+        "آزمایشگاه کف",
+        "بارگیری",
+        "بسته بندی کف",
+        "بسته بندی دیوار",
+        "پرس دیوار",
+        "پرس کف",
+        "تحقیق و توسعه",
+        "تضمین کیفیت",
+        "کنترل تولید",
+        "مدیر تولید بدنه",
+        "خط لعاب کف",
+        "سوپروایزر",
+        "طراحی",
+        "فروش",
+        "فروش دفتر تهران",
+        "فنی الکترونیک",
+        "فنی تراشکاری",
+        "فنی برق",
+        "کنترل کیفی کف",
+        "کوره",
+        "لعاب سازی",
+        "مدیر عامل",
+        "مشترک تولید",
+        "تهیه بدنه",
+        "بازرگانی",
+        "بسته بندی درجه زن",
+        "فنی تاسیسات",
+        "بسته بندی لیفتراک",
+        "فنی مکانیک",
+        "فنی نقاشی و سرویسکاری",
+        "کنترل کیفی دیوار",
+        "خدمات",
+        "فنی سیم پیچی",
+        "فنی نگهداری و تعمیرات",
+        "مدیر فنی",
+        "خط لعاب دیوار",
+        "فنی جوشکاری"
+      ]
+    },
+    "seen": {
+      "type": "json"
+    }
+  }
+}

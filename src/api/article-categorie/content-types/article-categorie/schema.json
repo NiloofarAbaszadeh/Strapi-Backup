@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_categories",
+  "info": {
+    "singularName": "article-categorie",
+    "pluralName": "article-categories",
+    "displayName": "دسته بندی اخبار و مقالات",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

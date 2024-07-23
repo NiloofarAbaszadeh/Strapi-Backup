@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_comments",
+  "info": {
+    "singularName": "all-comment",
+    "pluralName": "all-comments",
+    "displayName": "نظرات",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "richtext",
+      "required": true
+    },
+    "from": {
+      "type": "string"
+    },
+    "destinationId": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

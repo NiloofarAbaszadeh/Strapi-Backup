@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_home_elements_news_elements",
+  "info": {
+    "displayName": "newsElements",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "string",
+      "required": true
+    },
+    "buttonTitle": {
+      "type": "string",
+      "required": true
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-elements.box-images",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "coll_pages",
+  "info": {
+    "singularName": "coll-page",
+    "pluralName": "coll-pages",
+    "displayName": "صفحه لیست محصولات"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "collectionTitle": {
+      "type": "string",
+      "required": false
+    },
+    "collectionImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "groupTitle": {
+      "type": "string"
+    },
+    "groupImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "tileTitle": {
+      "type": "string"
+    },
+    "tileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_data_social_medias",
+  "info": {
+    "displayName": "navIcons",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Url": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    }
+  }
+}

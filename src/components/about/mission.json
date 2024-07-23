@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_about_missions",
+  "info": {
+    "displayName": "Mission",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "discraption": {
+      "type": "richtext"
+    },
+    "subdiscraption": {
+      "type": "richtext"
+    }
+  }
+}

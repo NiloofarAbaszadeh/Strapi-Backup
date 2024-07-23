@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visits",
+  "info": {
+    "singularName": "visit",
+    "pluralName": "visits",
+    "displayName": "بازدید ها",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "discraption": {
+      "type": "richtext",
+      "required": true
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sideImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Subject": {
+      "type": "string"
+    },
+    "highlightedText": {
+      "type": "richtext"
+    },
+    "personStatement": {
+      "type": "component",
+      "repeatable": false,
+      "component": "news.person-comment"
+    },
+    "likes": {
+      "type": "biginteger",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "summery": {
+      "type": "text",
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

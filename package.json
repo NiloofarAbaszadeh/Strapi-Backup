@@ -1,0 +1,47 @@
+{
+  "name": "setare",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@notum-cz/strapi-plugin-content-versioning": "^1.0.1",
+    "@palmabit/strapi-app-version": "^1.1.0",
+    "@strapi/design-system": "^1.10.1",
+    "@strapi/plugin-i18n": "4.24.1",
+    "@strapi/plugin-seo": "^1.9.8",
+    "@strapi/plugin-users-permissions": "4.24.1",
+    "@strapi/strapi": "4.24.1",
+    "@strapi/utils": "^4.25.1",
+    "axios": "^1.6.2",
+    "better-sqlite3": "8.6.0",
+    "pg": "^8.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4",
+    "strapi-google-auth": "^0.2.1",
+    "strapi-plugin-comment-manager": "^1.0.17",
+    "strapi-plugin-custom-api": "^1.0.4",
+    "strapi-plugin-import-export-entries": "^1.23.1",
+    "strapi-plugin-populate-deep": "^3.0.1",
+    "strapi-plugin-responsive-image": "^1.1.0",
+    "styled-components": "^5.3.11",
+    "yarn": "^1.22.19"
+  },
+  "author": {
+    "name": "Niloofar Abaszadeh"
+  },
+  "strapi": {
+    "uuid": "eb541cc8-4abb-4465-abe3-b27233f107f1"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

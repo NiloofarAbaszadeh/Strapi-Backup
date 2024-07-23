@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_titles",
+  "info": {
+    "displayName": "title",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "discraption": {
+      "type": "richtext"
+    },
+    "sampleTile": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.tile-sample",
+      "required": true
+    }
+  }
+}

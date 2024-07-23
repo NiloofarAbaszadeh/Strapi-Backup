@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "researchs",
+  "info": {
+    "singularName": "research",
+    "pluralName": "researchs",
+    "displayName": "مقالات",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "discraption": {
+      "type": "richtext",
+      "required": true
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sideImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "subject": {
+      "type": "string"
+    },
+    "highlightedText": {
+      "type": "richtext"
+    },
+    "personStatement": {
+      "type": "component",
+      "repeatable": false,
+      "component": "news.person-comment"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "summery": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

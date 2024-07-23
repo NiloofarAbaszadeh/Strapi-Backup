@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_catalog_catalog_infos",
+  "info": {
+    "displayName": "catalogInfo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_home_elements_new_in_wrolds",
+  "info": {
+    "displayName": "newInWrold",
+    "icon": "connector"
+  },
+  "options": {},
+  "attributes": {
+    "redtext": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "discraption": {
+      "type": "richtext",
+      "required": true
+    },
+    "bigImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "smallImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

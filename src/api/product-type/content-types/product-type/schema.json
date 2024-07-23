@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_types",
+  "info": {
+    "singularName": "product-type",
+    "pluralName": "product-types",
+    "displayName": "نوع محصول",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

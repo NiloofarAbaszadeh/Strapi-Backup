@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_home_elements_sliders",
+  "info": {
+    "displayName": "slider",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Subject": {
+      "type": "string",
+      "required": false
+    },
+    "Title": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

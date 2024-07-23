@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_cunters",
+  "info": {
+    "displayName": "cunter",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

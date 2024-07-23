@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aftkharats",
+  "info": {
+    "singularName": "aftkharat",
+    "pluralName": "aftkharats",
+    "displayName": "افتخارات",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "reward": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prize.element",
+      "required": true
+    },
+    "boardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

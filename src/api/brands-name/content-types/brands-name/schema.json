@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands_names",
+  "info": {
+    "singularName": "brands-name",
+    "pluralName": "brands-names",
+    "displayName": "نام برند",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

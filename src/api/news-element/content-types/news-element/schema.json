@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_elements",
+  "info": {
+    "singularName": "news-element",
+    "pluralName": "news-elements",
+    "displayName": "خبر",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "discraption": {
+      "type": "richtext",
+      "required": true
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sideImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "highLightedText": {
+      "type": "richtext"
+    },
+    "personStatement": {
+      "type": "component",
+      "repeatable": true,
+      "component": "news.person-comment"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "summery": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "design_types",
+  "info": {
+    "singularName": "design-type",
+    "pluralName": "design-types",
+    "displayName": "نوع طراحی",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "design": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

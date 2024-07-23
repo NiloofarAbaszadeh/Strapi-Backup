@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_about_summeries",
+  "info": {
+    "displayName": "summery",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "rightImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "start": {
+      "type": "text",
+      "required": true
+    },
+    "discraption": {
+      "type": "richtext",
+      "required": true
+    },
+    "leftImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "aboutTiles": {
+      "type": "string",
+      "required": true
+    },
+    "discraptionTiles": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

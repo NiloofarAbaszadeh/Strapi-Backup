@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_home_elements_boxes",
+  "info": {
+    "displayName": "box"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "discraption": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

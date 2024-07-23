@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_about_social_medias",
+  "info": {
+    "displayName": "socialMedia"
+  },
+  "options": {},
+  "attributes": {
+    "twitterLink": {
+      "type": "string",
+      "required": true
+    },
+    "linkdinLink": {
+      "type": "string",
+      "required": true
+    },
+    "facebookLink": {
+      "type": "string",
+      "required": true
+    },
+    "instagramLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

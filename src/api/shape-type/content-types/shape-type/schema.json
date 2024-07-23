@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shape_types",
+  "info": {
+    "singularName": "shape-type",
+    "pluralName": "shape-types",
+    "displayName": "نوع شکل",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shape": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "collectionName": "components_place_base_infos",
+  "info": {
+    "displayName": "base info",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-type.product-type"
+    },
+    "size": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::abead.abead"
+    },
+    "shape": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shape-type.shape-type"
+    },
+    "design": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::design-type.design-type"
+    },
+    "color_themes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::color-theme.color-theme"
+    },
+    "bodyColor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::body-color.body-color"
+    },
+    "brandName": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brands-name.brands-name"
+    },
+    "galeb": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::molde-type.molde-type"
+    },
+    "glazeType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::glaze-type.glaze-type"
+    },
+    "bakeType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::baking-type.baking-type"
+    },
+    "stamp": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stamp-type.stamp-type"
+    },
+    "special_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::special-features.special-features"
+    },
+    "use_places": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::usage-place.usage-place"
+    }
+  }
+}

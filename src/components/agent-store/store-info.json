@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_agent_store_store_infos",
+  "info": {
+    "displayName": "StoreInfo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "address": {
+      "type": "richtext",
+      "required": true
+    },
+    "workHours": {
+      "type": "text",
+      "required": false
+    },
+    "StoreNumber": {
+      "type": "biginteger"
+    },
+    "faxNumber": {
+      "type": "biginteger"
+    }
+  }
+}

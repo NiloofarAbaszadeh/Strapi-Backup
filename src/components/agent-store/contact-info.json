@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_contact_contact_infos",
+  "info": {
+    "displayName": "contact info",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "phoneNumber": {
+      "type": "biginteger"
+    }
+  }
+}

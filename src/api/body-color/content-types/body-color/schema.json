@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "body_colors",
+  "info": {
+    "singularName": "body-color",
+    "pluralName": "body-colors",
+    "displayName": "رنگ بدنه",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

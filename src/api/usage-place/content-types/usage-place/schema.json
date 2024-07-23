@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usage_places",
+  "info": {
+    "singularName": "usage-place",
+    "pluralName": "usage-places",
+    "displayName": "مکان مورد استفاده",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "place": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

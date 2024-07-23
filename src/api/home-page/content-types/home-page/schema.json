@@ -1,0 +1,82 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "صفحه خانه",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "Slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-elements.slider",
+      "required": true
+    },
+    "aboutUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.about-us",
+      "required": true
+    },
+    "newsElements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.news-elements",
+      "required": true
+    },
+    "groupElements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.group-elements",
+      "required": true
+    },
+    "articleElements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.news-elements",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "ourWork": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.option-boxs",
+      "required": false
+    },
+    "doneWork": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.news-elements"
+    },
+    "newInWrold": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.new-in-wrold"
+    },
+    "comments": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.news-elements",
+      "required": false
+    },
+    "Parallax": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.parallax",
+      "required": true
+    }
+  }
+}

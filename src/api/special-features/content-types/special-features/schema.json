@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "special_featuress",
+  "info": {
+    "singularName": "special-features",
+    "pluralName": "special-featuress",
+    "displayName": "ویژگی های خاص",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "feature": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

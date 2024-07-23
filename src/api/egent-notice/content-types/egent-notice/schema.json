@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "egent_notices",
+  "info": {
+    "singularName": "egent-notice",
+    "pluralName": "egent-notices",
+    "displayName": "اعلان نمایندگان"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "discraption": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

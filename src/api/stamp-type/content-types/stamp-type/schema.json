@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stamp_types",
+  "info": {
+    "singularName": "stamp-type",
+    "pluralName": "stamp-types",
+    "displayName": "نوع چاپ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stamp": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

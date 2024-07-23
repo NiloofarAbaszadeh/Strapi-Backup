@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_data_dropdown_links",
+  "info": {
+    "displayName": "dropdownLink",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

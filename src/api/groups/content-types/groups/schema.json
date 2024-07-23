@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groupss",
+  "info": {
+    "singularName": "groups",
+    "pluralName": "groupss",
+    "displayName": "گروه ها",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "GroupImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "discraption": {
+      "type": "richtext"
+    },
+    "complementaryGroup": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::groups.groups"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "tiles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "groups"
+    },
+    "collections": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::collections.collections",
+      "mappedBy": "groups"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

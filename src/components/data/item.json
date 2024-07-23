@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_data_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "itemTest": {
+      "type": "string"
+    },
+    "tm_rngy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::color-theme.color-theme"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_home_elements_aboutuses",
+  "info": {
+    "displayName": "aboutUs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string",
+      "required": true
+    },
+    "linkText": {
+      "type": "string",
+      "required": true
+    },
+    "buttonText": {
+      "type": "string",
+      "required": true
+    },
+    "sideTitle": {
+      "type": "string",
+      "required": true
+    },
+    "summery": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "videoTitle": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

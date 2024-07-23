@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mwjwdy_kashy_has",
+  "info": {
+    "singularName": "mwjwdy-kashy-ha",
+    "pluralName": "mwjwdy-kashy-has",
+    "displayName": "موجودی کاشی ها"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

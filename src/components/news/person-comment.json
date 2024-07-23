@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_news_person_comments",
+  "info": {
+    "displayName": "personComment",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "discraption": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

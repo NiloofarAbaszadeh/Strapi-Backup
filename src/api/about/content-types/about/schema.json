@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "صفحه درباره ما",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "boardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "boardTitle": {
+      "type": "string",
+      "required": true
+    },
+    "boardDiscraption": {
+      "type": "string"
+    },
+    "summery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.summery"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.values"
+    },
+    "mission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.mission"
+    },
+    "people": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.people",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "cunter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.cunter",
+      "required": true
+    }
+  }
+}

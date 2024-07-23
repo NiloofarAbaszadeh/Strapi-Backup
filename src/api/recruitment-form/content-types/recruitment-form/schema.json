@@ -1,0 +1,241 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recruitment_forms",
+  "info": {
+    "singularName": "recruitment-form",
+    "pluralName": "recruitment-forms",
+    "displayName": "فرم های استخدام",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "acquaintanceToSetareh": {
+      "type": "string"
+    },
+    "acquaintancesInfo": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "addressState": {
+      "type": "string"
+    },
+    "birthDay": {
+      "type": "string"
+    },
+    "birthPlace": {
+      "type": "string"
+    },
+    "children": {
+      "type": "string"
+    },
+    "currentWorkPlace": {
+      "type": "string"
+    },
+    "demandedJob": {
+      "type": "string"
+    },
+    "experienceInSetareh": {
+      "type": "string"
+    },
+    "familybrathers": {
+      "type": "string"
+    },
+    "familyfathersJob": {
+      "type": "string"
+    },
+    "familymather": {
+      "type": "string"
+    },
+    "familymathersJob": {
+      "type": "string"
+    },
+    "familysisters": {
+      "type": "string"
+    },
+    "familyspouse": {
+      "type": "string"
+    },
+    "familyspousesJob": {
+      "type": "string"
+    },
+    "fatherName": {
+      "type": "string"
+    },
+    "fieldOfStudy": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "insuranceNumber": {
+      "type": "string"
+    },
+    "internshipHistory": {
+      "type": "string"
+    },
+    "introduceBy1address": {
+      "type": "string"
+    },
+    "introduceBy1fullName": {
+      "type": "string"
+    },
+    "introduceBy1mobile": {
+      "type": "string"
+    },
+    "introduceBy1relationship": {
+      "type": "string"
+    },
+    "introduceBy2address": {
+      "type": "string"
+    },
+    "introduceBy2fullName": {
+      "type": "string"
+    },
+    "introduceBy2mobile": {
+      "type": "string"
+    },
+    "introduceBy2relationship": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "languageState": {
+      "type": "string"
+    },
+    "lastEducationalCertificate": {
+      "type": "string"
+    },
+    "maritalStatus": {
+      "type": "string"
+    },
+    "militaryService": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "nationalCode": {
+      "type": "string"
+    },
+    "personId": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "physicalCondition": {
+      "type": "string"
+    },
+    "remissionReason": {
+      "type": "string"
+    },
+    "remissionState": {
+      "type": "string"
+    },
+    "requestExtraBenefits": {
+      "type": "string"
+    },
+    "salaryRequested": {
+      "type": "string"
+    },
+    "serviceUnit": {
+      "type": "string"
+    },
+    "skillsAtWork": {
+      "type": "string"
+    },
+    "specializedCertificate": {
+      "type": "string"
+    },
+    "university": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "workExperience1address": {
+      "type": "string"
+    },
+    "workExperience1company": {
+      "type": "string"
+    },
+    "workExperience1income": {
+      "type": "string"
+    },
+    "workExperience1leavingReason": {
+      "type": "string"
+    },
+    "workExperience1phonNumber": {
+      "type": "string"
+    },
+    "workExperience1side": {
+      "type": "string"
+    },
+    "workExperience1workExperience": {
+      "type": "string"
+    },
+    "workExperience2address": {
+      "type": "string"
+    },
+    "workExperience2company": {
+      "type": "string"
+    },
+    "workExperience2income": {
+      "type": "string"
+    },
+    "workExperience2leavingReason": {
+      "type": "string"
+    },
+    "workExperience2phonNumber": {
+      "type": "string"
+    },
+    "workExperience2side": {
+      "type": "string"
+    },
+    "workExperience2workExperience": {
+      "type": "string"
+    },
+    "workExperience3address": {
+      "type": "string"
+    },
+    "workExperience3company": {
+      "type": "string"
+    },
+    "workExperience3income": {
+      "type": "string"
+    },
+    "workExperience3leavingReason": {
+      "type": "string"
+    },
+    "workExperience3phonNumber": {
+      "type": "string"
+    },
+    "workExperience3side": {
+      "type": "string"
+    },
+    "workExperience3workExperience": {
+      "type": "string"
+    },
+    "allowChangeSide": {
+      "type": "boolean"
+    },
+    "extraWork": {
+      "type": "boolean"
+    },
+    "missionOutsideWorkTime": {
+      "type": "boolean"
+    },
+    "workThreeShiftes": {
+      "type": "boolean"
+    }
+  }
+}

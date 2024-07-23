@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_elements_counters",
+  "info": {
+    "displayName": "counters"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "biginteger",
+      "required": true
+    },
+    "redText": {
+      "type": "string",
+      "required": true
+    },
+    "blackText": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

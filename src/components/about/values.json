@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_about_values",
+  "info": {
+    "displayName": "values",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "discraption": {
+      "type": "richtext"
+    },
+    "valu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.valu",
+      "required": true
+    }
+  }
+}

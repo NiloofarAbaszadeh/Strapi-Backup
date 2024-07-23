@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_data_nav_links",
+  "info": {
+    "displayName": "navLink",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "dropdown": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.dropdown-link",
+      "required": false
+    }
+  }
+}

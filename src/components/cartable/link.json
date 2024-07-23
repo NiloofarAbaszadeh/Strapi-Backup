@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_cartable_links",
+  "info": {
+    "displayName": "Link"
+  },
+  "options": {},
+  "attributes": {
+    "LinkName": {
+      "type": "string",
+      "required": true
+    },
+    "LinkIcon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

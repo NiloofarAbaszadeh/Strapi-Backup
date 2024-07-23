@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abeads",
+  "info": {
+    "singularName": "abead",
+    "pluralName": "abeads",
+    "displayName": "ابعاد",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "size": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

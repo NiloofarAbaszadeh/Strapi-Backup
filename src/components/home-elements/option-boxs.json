@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_elements_option_boxs",
+  "info": {
+    "displayName": "optionBoxs",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "discreptionText": {
+      "type": "string",
+      "required": true
+    },
+    "subDiscreptionText": {
+      "type": "string",
+      "required": true
+    },
+    "boxs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-elements.box",
+      "required": true
+    }
+  }
+}

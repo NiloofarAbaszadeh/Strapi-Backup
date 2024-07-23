@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "call_uss",
+  "info": {
+    "singularName": "call-us",
+    "pluralName": "call-uss",
+    "displayName": "صفحه تماس با ما",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contactInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-us-page.constct-company",
+      "required": true
+    },
+    "stores": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-us-page.location",
+      "required": true
+    },
+    "boardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "boardTitle": {
+      "type": "string",
+      "required": true
+    },
+    "boardSubTitle": {
+      "type": "string",
+      "required": true
+    },
+    "socialMedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.social-media",
+      "required": true
+    },
+    "socialTitle": {
+      "type": "string",
+      "required": true,
+      "default": "در فضای مجازی با ما در ارتباط باشید"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

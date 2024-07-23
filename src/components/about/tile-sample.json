@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_about_tile_samples",
+  "info": {
+    "displayName": "tileSample",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "samples": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
