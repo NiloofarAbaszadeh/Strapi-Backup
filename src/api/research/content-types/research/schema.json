@@ -10,10 +10,19 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -21,7 +30,12 @@
     },
     "discraption": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "author": {
       "type": "relation",
@@ -34,7 +48,12 @@
       "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "sideImage": {
       "type": "media",
@@ -42,28 +61,63 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "subject": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "highlightedText": {
-      "type": "richtext"
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "personStatement": {
       "type": "component",
       "repeatable": false,
-      "component": "news.person-comment"
+      "component": "news.person-comment",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "likes": {
-      "type": "integer"
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "date": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "summery": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "tags": {
       "type": "relation",
@@ -73,7 +127,12 @@
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

@@ -4,28 +4,39 @@
   "info": {
     "singularName": "research-page",
     "pluralName": "research-pages",
-    "displayName": "صفحه مقالات"
+    "displayName": "صفحه مقالات",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "boardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
-      "required": true
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

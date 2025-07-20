@@ -370,6 +370,19 @@ export interface HomeElementsGroupElements extends Schema.Component {
   };
 }
 
+export interface HomeElementsMainShow extends Schema.Component {
+  collectionName: 'components_home_elements_main_shows';
+  info: {
+    displayName: 'MainShow';
+  };
+  attributes: {
+    Name: Attribute.String & Attribute.Required;
+    MainImage: Attribute.Media & Attribute.Required;
+    ShowPins: Attribute.Component<'home-elements.show-pin', true> &
+      Attribute.Required;
+  };
+}
+
 export interface HomeElementsNewInWrold extends Schema.Component {
   collectionName: 'components_home_elements_new_in_wrolds';
   info: {
@@ -424,6 +437,24 @@ export interface HomeElementsParallax extends Schema.Component {
     content: Attribute.RichText;
     button: Attribute.String;
     image: Attribute.Media;
+  };
+}
+
+export interface HomeElementsShowPin extends Schema.Component {
+  collectionName: 'components_home_elements_show_pins';
+  info: {
+    displayName: 'ShowPin';
+    description: '';
+  };
+  attributes: {
+    Name: Attribute.String & Attribute.Required;
+    tile: Attribute.Relation<
+      'home-elements.show-pin',
+      'oneToOne',
+      'api::product.product'
+    >;
+    left: Attribute.BigInteger & Attribute.Required;
+    top: Attribute.BigInteger & Attribute.Required;
   };
 }
 
@@ -618,10 +649,12 @@ declare module '@strapi/types' {
       'home-elements.box': HomeElementsBox;
       'home-elements.counters': HomeElementsCounters;
       'home-elements.group-elements': HomeElementsGroupElements;
+      'home-elements.main-show': HomeElementsMainShow;
       'home-elements.new-in-wrold': HomeElementsNewInWrold;
       'home-elements.news-elements': HomeElementsNewsElements;
       'home-elements.option-boxs': HomeElementsOptionBoxs;
       'home-elements.parallax': HomeElementsParallax;
+      'home-elements.show-pin': HomeElementsShowPin;
       'home-elements.slider': HomeElementsSlider;
       'news.person-comment': NewsPersonComment;
       'place.base-info': PlaceBaseInfo;

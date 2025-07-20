@@ -10,19 +10,33 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "contactInfo": {
       "type": "component",
       "repeatable": true,
       "component": "contact-us-page.constct-company",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "stores": {
       "type": "component",
       "repeatable": true,
       "component": "contact-us-page.location",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "boardImage": {
       "type": "media",
@@ -30,26 +44,51 @@
       "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "boardTitle": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "boardSubTitle": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "socialMedia": {
       "type": "component",
       "repeatable": false,
       "component": "about.social-media",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "socialTitle": {
       "type": "string",
       "required": true,
-      "default": "در فضای مجازی با ما در ارتباط باشید"
+      "default": "در فضای مجازی با ما در ارتباط باشید",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "logo": {
       "type": "media",
@@ -57,12 +96,22 @@
       "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

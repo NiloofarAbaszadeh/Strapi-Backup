@@ -10,25 +10,39 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "fullName": {
       "type": "string",
-      "required": true
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "fullName",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "store": {
       "type": "component",
       "repeatable": true,
-      "component": "agent-store.store-info"
+      "component": "agent-store.store-info",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "personeli": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

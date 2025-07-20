@@ -10,12 +10,21 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "bakeType": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "icon": {
       "type": "media",
@@ -23,7 +32,12 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

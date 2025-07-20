@@ -10,16 +10,30 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "discraption": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "author": {
       "type": "relation",
@@ -32,7 +46,12 @@
       "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "sideImages": {
       "type": "media",
@@ -43,29 +62,59 @@
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "subject": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "highLightedText": {
-      "type": "richtext"
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "personStatement": {
       "type": "component",
       "repeatable": true,
-      "component": "news.person-comment"
+      "component": "news.person-comment",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "likes": {
       "type": "integer"
     },
     "date": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "summery": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "tags": {
       "type": "relation",
@@ -75,7 +124,12 @@
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

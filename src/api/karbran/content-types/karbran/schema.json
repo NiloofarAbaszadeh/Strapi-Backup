@@ -10,7 +10,11 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "username": {
       "type": "string",
@@ -110,7 +114,8 @@
         "فنی نگهداری و تعمیرات",
         "مدیر فنی",
         "خط لعاب دیوار",
-        "فنی جوشکاری"
+        "فنی جوشکاری",
+        "مدیر کارخانه"
       ]
     },
     "seen": {

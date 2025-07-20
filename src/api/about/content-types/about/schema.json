@@ -10,12 +10,21 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "slug": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "boardImage": {
       "type": "media",
@@ -23,46 +32,91 @@
       "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "boardTitle": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "boardDiscraption": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "summery": {
       "type": "component",
       "repeatable": false,
-      "component": "about.summery"
+      "component": "about.summery",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "values": {
       "type": "component",
       "repeatable": false,
-      "component": "about.values"
+      "component": "about.values",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "mission": {
       "type": "component",
       "repeatable": false,
-      "component": "about.mission"
+      "component": "about.mission",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "people": {
       "type": "component",
       "repeatable": true,
       "component": "about.people",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "cunter": {
       "type": "component",
       "repeatable": true,
       "component": "about.cunter",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

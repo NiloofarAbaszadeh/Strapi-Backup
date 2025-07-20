@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_home_elements_main_shows",
+  "info": {
+    "displayName": "MainShow"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "MainImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "ShowPins": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-elements.show-pin",
+      "required": true
+    }
+  }
+}

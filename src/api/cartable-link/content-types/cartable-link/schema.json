@@ -4,27 +4,47 @@
   "info": {
     "singularName": "cartable-link",
     "pluralName": "cartable-links",
-    "displayName": "لینک های کارتابل"
+    "displayName": "لینک های کارتابل",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "AgentLink": {
       "type": "component",
       "repeatable": true,
-      "component": "cartable.link"
+      "component": "cartable.link",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "AdminLink": {
       "type": "component",
       "repeatable": true,
-      "component": "cartable.link"
+      "component": "cartable.link",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "EmployeLink": {
       "type": "component",
       "repeatable": true,
-      "component": "cartable.link"
+      "component": "cartable.link",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

@@ -11,15 +11,20 @@
     "draftAndPublish": true
   },
   "pluginOptions": {
-    "versions": {
-      "versioned": true
+    "i18n": {
+      "localized": true
     }
   },
   "attributes": {
     "size": {
       "type": "string",
       "required": true,
-      "unique": false
+      "unique": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "icon": {
       "type": "media",
@@ -27,7 +32,12 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "egent_notices",
+  "collectionName": "employee_notices",
   "info": {
-    "singularName": "egent-notice",
-    "pluralName": "egent-notices",
-    "displayName": "اعلان نمایندگان",
-    "description": ""
+    "singularName": "employee-notice",
+    "pluralName": "employee-notices",
+    "displayName": "اعلان کارمندان"
   },
   "options": {
     "draftAndPublish": true

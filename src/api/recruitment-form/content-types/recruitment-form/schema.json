@@ -10,7 +10,11 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "acquaintanceToSetareh": {
       "type": "string"
@@ -124,7 +128,8 @@
       "type": "string"
     },
     "nationalCode": {
-      "type": "string"
+      "type": "string",
+      "unique": false
     },
     "personId": {
       "type": "string"

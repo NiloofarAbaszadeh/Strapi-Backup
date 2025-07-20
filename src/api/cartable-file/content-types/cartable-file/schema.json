@@ -4,27 +4,42 @@
   "info": {
     "singularName": "cartable-file",
     "pluralName": "cartable-files",
-    "displayName": "فایل های کارتابل"
+    "displayName": "فایل های کارتابل",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

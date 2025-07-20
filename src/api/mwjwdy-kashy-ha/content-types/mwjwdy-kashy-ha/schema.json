@@ -4,25 +4,40 @@
   "info": {
     "singularName": "mwjwdy-kashy-ha",
     "pluralName": "mwjwdy-kashy-has",
-    "displayName": "موجودی کاشی ها"
+    "displayName": "موجودی کاشی ها",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "files",
         "images"
       ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
