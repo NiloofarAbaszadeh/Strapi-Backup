@@ -23,6 +23,21 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "state": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "schedule": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.scheduling"
+    },
+    "link": {
+      "type": "string",
+      "required": false,
+      "default": "/"
     }
   }
 }

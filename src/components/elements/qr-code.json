@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_elements_qr_codes",
+  "info": {
+    "displayName": "Qr code"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+}

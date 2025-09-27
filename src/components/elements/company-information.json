@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_company_informations",
+  "info": {
+    "displayName": "Company Information",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "qr_code": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.qr-code"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "working_hours": {
+      "type": "string"
+    }
+  }
+}

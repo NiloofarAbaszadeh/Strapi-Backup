@@ -2318,14 +2318,40 @@ export interface ApiFooterFooter extends Schema.SingleType {
     };
   };
   attributes: {
-    whiteLogo: Attribute.Media &
+    typography: Attribute.Media &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    navOption: Attribute.Component<'data.nav-link', true> &
+    international_certificates: Attribute.Relation<
+      'api::footer.footer',
+      'oneToMany',
+      'api::international-certificate.international-certificate'
+    >;
+    information: Attribute.Component<'elements.company-information'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    social_media: Attribute.Component<'shared.social-media-footer'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    nav: Attribute.Component<'elements.nav-footer', true> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    news_title: Attribute.String &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2706,7 +2732,6 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     };
   };
   attributes: {
-    slug: Attribute.UID;
     Slider: Attribute.Component<'home-elements.slider', true> &
       Attribute.Required &
       Attribute.SetPluginOptions<{
@@ -2809,6 +2834,95 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   };
 }
 
+export interface ApiHonorHonor extends Schema.CollectionType {
+  collectionName: 'honors';
+  info: {
+    singularName: 'honor';
+    pluralName: 'honors';
+    displayName: 'Honor';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    banner: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    mainImage: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    description: Attribute.Blocks &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    seo: Attribute.Component<'shared.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    date: Attribute.Date &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::honor.honor',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::honor.honor',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::honor.honor',
+      'oneToMany',
+      'api::honor.honor'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiInternalAgentsNameInternalAgentsName
   extends Schema.CollectionType {
   collectionName: 'internal_agents_names';
@@ -2871,6 +2985,184 @@ export interface ApiInternalAgentsNameInternalAgentsName
   };
 }
 
+export interface ApiInternalCertificateInternalCertificate
+  extends Schema.CollectionType {
+  collectionName: 'internal_certificates';
+  info: {
+    singularName: 'internal-certificate';
+    pluralName: 'internal-certificates';
+    displayName: 'Internal certificate';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    banner: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    mainImage: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    description: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    seo: Attribute.Component<'shared.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    date: Attribute.Date &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::internal-certificate.internal-certificate',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::internal-certificate.internal-certificate',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::internal-certificate.internal-certificate',
+      'oneToMany',
+      'api::internal-certificate.internal-certificate'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiInternationalCertificateInternationalCertificate
+  extends Schema.CollectionType {
+  collectionName: 'international_certificates';
+  info: {
+    singularName: 'international-certificate';
+    pluralName: 'international-certificates';
+    displayName: 'International certificate';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    bannar: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    mainImage: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    description: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    seo: Attribute.Component<'shared.seo'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    date: Attribute.Date &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::international-certificate.international-certificate',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::international-certificate.international-certificate',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::international-certificate.international-certificate',
+      'oneToMany',
+      'api::international-certificate.international-certificate'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiKarbranKarbran extends Schema.CollectionType {
   collectionName: 'karbrans';
   info: {
@@ -2910,6 +3202,7 @@ export interface ApiKarbranKarbran extends Schema.CollectionType {
         '\u0646\u0645\u0627\u06CC\u0646\u062F\u0647',
         '\u0627\u062F\u0645\u06CC\u0646',
         '\u0627\u0645\u0648\u0631 \u0627\u062F\u0627\u0631\u06CC',
+        '\u062D\u0633\u0627\u0628\u062F\u0627\u0631\u06CC',
         '\u0627\u0645\u0648\u0631 \u0645\u0627\u0644\u06CC',
         '\u062E\u0627\u0646\u0647 \u0628\u0647\u062F\u0627\u0634\u062A',
         '\u0627\u0645\u0648\u0631 \u062D\u0642\u0648\u0642\u06CC',
@@ -2956,7 +3249,8 @@ export interface ApiKarbranKarbran extends Schema.CollectionType {
         '\u0645\u062F\u06CC\u0631 \u0641\u0646\u06CC',
         '\u062E\u0637 \u0644\u0639\u0627\u0628 \u062F\u06CC\u0648\u0627\u0631',
         '\u0641\u0646\u06CC \u062C\u0648\u0634\u06A9\u0627\u0631\u06CC',
-        '\u0645\u062F\u06CC\u0631 \u06A9\u0627\u0631\u062E\u0627\u0646\u0647'
+        '\u0645\u062F\u06CC\u0631 \u06A9\u0627\u0631\u062E\u0627\u0646\u0647',
+        '\u0630\u062E\u064A\u0631\u0647 \u0633\u0627\u0632\u064A'
       ]
     >;
     seen: Attribute.JSON;
@@ -3936,6 +4230,142 @@ export interface ApiStampTypeStampType extends Schema.CollectionType {
   };
 }
 
+export interface ApiSurvaySurvay extends Schema.CollectionType {
+  collectionName: 'survays';
+  info: {
+    singularName: 'survay';
+    pluralName: 'survays';
+    displayName: 'survay';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    link: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    image: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    isActive: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.DefaultTo<false>;
+    subTitle: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::survay.survay',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::survay.survay',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::survay.survay',
+      'oneToMany',
+      'api::survay.survay'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiSurvayPageSurvayPage extends Schema.SingleType {
+  collectionName: 'survay_pages';
+  info: {
+    singularName: 'survay-page';
+    pluralName: 'survay-pages';
+    displayName: 'survay page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    image: Attribute.Media &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    discription: Attribute.Blocks &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::survay-page.survay-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::survay-page.survay-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::survay-page.survay-page',
+      'oneToMany',
+      'api::survay-page.survay-page'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiTagTag extends Schema.CollectionType {
   collectionName: 'tags';
   info: {
@@ -4254,7 +4684,10 @@ declare module '@strapi/types' {
       'api::gwahy-kharjy.gwahy-kharjy': ApiGwahyKharjyGwahyKharjy;
       'api::header.header': ApiHeaderHeader;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::honor.honor': ApiHonorHonor;
       'api::internal-agents-name.internal-agents-name': ApiInternalAgentsNameInternalAgentsName;
+      'api::internal-certificate.internal-certificate': ApiInternalCertificateInternalCertificate;
+      'api::international-certificate.international-certificate': ApiInternationalCertificateInternationalCertificate;
       'api::karbran.karbran': ApiKarbranKarbran;
       'api::login.login': ApiLoginLogin;
       'api::molde-type.molde-type': ApiMoldeTypeMoldeType;
@@ -4269,6 +4702,8 @@ declare module '@strapi/types' {
       'api::shape-type.shape-type': ApiShapeTypeShapeType;
       'api::special-features.special-features': ApiSpecialFeaturesSpecialFeatures;
       'api::stamp-type.stamp-type': ApiStampTypeStampType;
+      'api::survay.survay': ApiSurvaySurvay;
+      'api::survay-page.survay-page': ApiSurvayPageSurvayPage;
       'api::tag.tag': ApiTagTag;
       'api::usage-place.usage-place': ApiUsagePlaceUsagePlace;
       'api::visit.visit': ApiVisitVisit;

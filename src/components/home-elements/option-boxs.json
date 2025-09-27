@@ -7,19 +7,24 @@
   },
   "options": {},
   "attributes": {
-    "discreptionText": {
-      "type": "string",
-      "required": true
-    },
-    "subDiscreptionText": {
-      "type": "string",
-      "required": true
-    },
     "boxs": {
       "type": "component",
       "repeatable": true,
       "component": "home-elements.box",
       "required": true
+    },
+    "state": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

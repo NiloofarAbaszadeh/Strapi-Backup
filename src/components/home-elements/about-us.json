@@ -22,10 +22,6 @@
       "type": "string",
       "required": true
     },
-    "summery": {
-      "type": "string",
-      "required": true
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -45,6 +41,21 @@
     "videoTitle": {
       "type": "string",
       "required": false
+    },
+    "summery": {
+      "type": "text",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.button",
+      "required": true
+    },
+    "state": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_social_media_footers",
+  "info": {
+    "displayName": "Social Media Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "medias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.social-media"
+    }
+  }
+}

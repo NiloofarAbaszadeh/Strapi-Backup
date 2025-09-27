@@ -300,6 +300,56 @@ export interface DataSocialMedia extends Schema.Component {
   };
 }
 
+export interface ElementsCompanyInformation extends Schema.Component {
+  collectionName: 'components_elements_company_informations';
+  info: {
+    displayName: 'Company Information';
+    description: '';
+  };
+  attributes: {
+    qr_code: Attribute.Component<'elements.qr-code'>;
+    phone: Attribute.String;
+    email: Attribute.Email;
+    website: Attribute.String;
+    address: Attribute.Text;
+    working_hours: Attribute.String;
+  };
+}
+
+export interface ElementsNavFooter extends Schema.Component {
+  collectionName: 'components_elements_nav_footers';
+  info: {
+    displayName: 'Nav Footer';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    options: Attribute.Component<'elements.nav-items-footer', true> &
+      Attribute.Required;
+  };
+}
+
+export interface ElementsNavItemsFooter extends Schema.Component {
+  collectionName: 'components_elements_nav_items_footers';
+  info: {
+    displayName: 'Nav Items Footer';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    link: Attribute.String & Attribute.Required & Attribute.DefaultTo<'/'>;
+  };
+}
+
+export interface ElementsQrCode extends Schema.Component {
+  collectionName: 'components_elements_qr_codes';
+  info: {
+    displayName: 'Qr code';
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    note: Attribute.Text;
+  };
+}
+
 export interface HomeElementsAboutUs extends Schema.Component {
   collectionName: 'components_home_elements_aboutuses';
   info: {
@@ -311,10 +361,12 @@ export interface HomeElementsAboutUs extends Schema.Component {
     linkText: Attribute.String & Attribute.Required;
     buttonText: Attribute.String & Attribute.Required;
     sideTitle: Attribute.String & Attribute.Required;
-    summery: Attribute.String & Attribute.Required;
     image: Attribute.Media & Attribute.Required;
     video: Attribute.Media;
     videoTitle: Attribute.String;
+    summery: Attribute.Text & Attribute.Required;
+    button: Attribute.Component<'home-elements.button'> & Attribute.Required;
+    state: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
   };
 }
 
@@ -337,10 +389,25 @@ export interface HomeElementsBox extends Schema.Component {
   collectionName: 'components_home_elements_boxes';
   info: {
     displayName: 'box';
+    description: '';
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    discraption: Attribute.String & Attribute.Required;
+    discraption: Attribute.Text & Attribute.Required;
+    sideImage: Attribute.Media & Attribute.Required;
+    avatar: Attribute.Media & Attribute.Required;
+    mainImage: Attribute.Media & Attribute.Required;
+  };
+}
+
+export interface HomeElementsButton extends Schema.Component {
+  collectionName: 'components_home_elements_buttons';
+  info: {
+    displayName: 'button';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    link: Attribute.String & Attribute.Required & Attribute.DefaultTo<'/'>;
   };
 }
 
@@ -367,6 +434,8 @@ export interface HomeElementsGroupElements extends Schema.Component {
     buttonTitle: Attribute.String & Attribute.Required;
     title: Attribute.String & Attribute.Required;
     subtitle: Attribute.String & Attribute.Required;
+    button: Attribute.Component<'home-elements.button'> & Attribute.Required;
+    state: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
   };
 }
 
@@ -374,12 +443,14 @@ export interface HomeElementsMainShow extends Schema.Component {
   collectionName: 'components_home_elements_main_shows';
   info: {
     displayName: 'MainShow';
+    description: '';
   };
   attributes: {
     Name: Attribute.String & Attribute.Required;
     MainImage: Attribute.Media & Attribute.Required;
     ShowPins: Attribute.Component<'home-elements.show-pin', true> &
       Attribute.Required;
+    state: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
   };
 }
 
@@ -388,6 +459,7 @@ export interface HomeElementsNewInWrold extends Schema.Component {
   info: {
     displayName: 'newInWrold';
     icon: 'connector';
+    description: '';
   };
   attributes: {
     redtext: Attribute.String & Attribute.Required;
@@ -395,6 +467,8 @@ export interface HomeElementsNewInWrold extends Schema.Component {
     discraption: Attribute.RichText & Attribute.Required;
     bigImg: Attribute.Media & Attribute.Required;
     smallImg: Attribute.Media & Attribute.Required;
+    button: Attribute.Component<'home-elements.button'> & Attribute.Required;
+    state: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
   };
 }
 
@@ -407,8 +481,8 @@ export interface HomeElementsNewsElements extends Schema.Component {
   attributes: {
     mainTitle: Attribute.String & Attribute.Required;
     SubTitle: Attribute.String & Attribute.Required;
-    buttonTitle: Attribute.String & Attribute.Required;
     item: Attribute.Component<'home-elements.box-images', true>;
+    state: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
   };
 }
 
@@ -420,9 +494,9 @@ export interface HomeElementsOptionBoxs extends Schema.Component {
     description: '';
   };
   attributes: {
-    discreptionText: Attribute.String & Attribute.Required;
-    subDiscreptionText: Attribute.String & Attribute.Required;
     boxs: Attribute.Component<'home-elements.box', true> & Attribute.Required;
+    state: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
+    mainImage: Attribute.Media & Attribute.Required;
   };
 }
 
@@ -430,13 +504,29 @@ export interface HomeElementsParallax extends Schema.Component {
   collectionName: 'components_home_elements_parallaxes';
   info: {
     displayName: 'Parallax';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     subtitle: Attribute.String;
     content: Attribute.RichText;
-    button: Attribute.String;
+    button: Attribute.Component<'home-elements.button'> & Attribute.Required;
     image: Attribute.Media;
+    state: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
+  };
+}
+
+export interface HomeElementsScheduling extends Schema.Component {
+  collectionName: 'components_home_elements_schedulings';
+  info: {
+    displayName: 'Scheduling';
+    description: '';
+  };
+  attributes: {
+    startDatee: Attribute.Date;
+    startTime: Attribute.Time & Attribute.DefaultTo<'00:00'>;
+    endDate: Attribute.Date;
+    endTime: Attribute.Time & Attribute.DefaultTo<'23:45'>;
   };
 }
 
@@ -469,6 +559,9 @@ export interface HomeElementsSlider extends Schema.Component {
     Subject: Attribute.String;
     Title: Attribute.String;
     image: Attribute.Media & Attribute.Required;
+    state: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
+    schedule: Attribute.Component<'home-elements.scheduling'>;
+    link: Attribute.String & Attribute.DefaultTo<'/'>;
   };
 }
 
@@ -619,6 +712,18 @@ export interface SharedSeo extends Schema.Component {
   };
 }
 
+export interface SharedSocialMediaFooter extends Schema.Component {
+  collectionName: 'components_elements_social_media_footers';
+  info: {
+    displayName: 'Social Media Footer';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String & Attribute.Required;
+    medias: Attribute.Component<'data.social-media', true>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -644,9 +749,14 @@ declare module '@strapi/types' {
       'data.item': DataItem;
       'data.nav-link': DataNavLink;
       'data.social-media': DataSocialMedia;
+      'elements.company-information': ElementsCompanyInformation;
+      'elements.nav-footer': ElementsNavFooter;
+      'elements.nav-items-footer': ElementsNavItemsFooter;
+      'elements.qr-code': ElementsQrCode;
       'home-elements.about-us': HomeElementsAboutUs;
       'home-elements.box-images': HomeElementsBoxImages;
       'home-elements.box': HomeElementsBox;
+      'home-elements.button': HomeElementsButton;
       'home-elements.counters': HomeElementsCounters;
       'home-elements.group-elements': HomeElementsGroupElements;
       'home-elements.main-show': HomeElementsMainShow;
@@ -654,6 +764,7 @@ declare module '@strapi/types' {
       'home-elements.news-elements': HomeElementsNewsElements;
       'home-elements.option-boxs': HomeElementsOptionBoxs;
       'home-elements.parallax': HomeElementsParallax;
+      'home-elements.scheduling': HomeElementsScheduling;
       'home-elements.show-pin': HomeElementsShowPin;
       'home-elements.slider': HomeElementsSlider;
       'news.person-comment': NewsPersonComment;
@@ -661,6 +772,7 @@ declare module '@strapi/types' {
       'prize.element': PrizeElement;
       'shared.meta-social': SharedMetaSocial;
       'shared.seo': SharedSeo;
+      'shared.social-media-footer': SharedSocialMediaFooter;
     }
   }
 }

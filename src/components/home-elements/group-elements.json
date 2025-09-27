@@ -28,6 +28,17 @@
     "subtitle": {
       "type": "string",
       "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-elements.button",
+      "required": true
+    },
+    "state": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

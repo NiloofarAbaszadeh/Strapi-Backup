@@ -16,9 +16,6 @@
     }
   },
   "attributes": {
-    "slug": {
-      "type": "uid"
-    },
     "Slider": {
       "type": "component",
       "repeatable": true,

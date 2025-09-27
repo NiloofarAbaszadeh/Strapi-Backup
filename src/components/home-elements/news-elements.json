@@ -14,15 +14,16 @@
       "type": "string",
       "required": true
     },
-    "buttonTitle": {
-      "type": "string",
-      "required": true
-    },
     "item": {
       "type": "component",
       "repeatable": true,
       "component": "home-elements.box-images",
       "required": false
+    },
+    "state": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

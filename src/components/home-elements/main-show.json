@@ -1,7 +1,8 @@
 {
   "collectionName": "components_home_elements_main_shows",
   "info": {
-    "displayName": "MainShow"
+    "displayName": "MainShow",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,17 +11,22 @@
       "required": true
     },
     "MainImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "ShowPins": {
       "type": "component",
       "repeatable": true,
       "component": "home-elements.show-pin",
+      "required": true
+    },
+    "state": {
+      "type": "boolean",
+      "default": true,
       "required": true
     }
   }

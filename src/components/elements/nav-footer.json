@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_nav_footers",
+  "info": {
+    "displayName": "Nav Footer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.nav-items-footer",
+      "required": true
+    }
+  }
+}

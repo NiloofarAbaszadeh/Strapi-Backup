@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_elements_schedulings",
+  "info": {
+    "displayName": "Scheduling",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "startDatee": {
+      "type": "date",
+      "required": false
+    },
+    "startTime": {
+      "type": "time",
+      "default": "00:00",
+      "required": false
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "endTime": {
+      "type": "time",
+      "default": "23:45"
+    }
+  }
+}
